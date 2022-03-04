@@ -8,7 +8,7 @@ interface CountryWithDistance extends Country {
   distance: number;
 }
 
-class Core {
+export class Core {
   private countries: Array<Country> = [];
   private currencies: Array<Currency> = [];
 
@@ -24,13 +24,20 @@ class Core {
     return Core.instance;
   } //end constructor
 
-  public getCountries(): Array<Country> {
-    return this.countries;
-  } //end method getCountries
-
   public getCurrencies(): Array<Currency> {
     return this.currencies;
   } //end method getCurrencies
+
+  public getCurrencyBy(
+    field: "name" | "code" | "symbol",
+    value: string
+  ): Currency | undefined {
+    return this.getCurrencies().find((el: Currency) => el[field] == value);
+  } //end method getCountriesBy
+
+  public getCountries(): Array<Country> {
+    return this.countries;
+  } //end method getCountries
 
   public getCountriesBy(
     field:
@@ -44,7 +51,7 @@ class Core {
     value: string
   ): Array<Country> {
     return this.countries.filter((el: Country) => el[field] == value);
-  } //end method
+  } //end method getCountriesBy
 
   private sphereDistance(
     firstLocation: LocationInterface,
@@ -137,8 +144,6 @@ class Core {
 
     return countriesWithDistance;
   } //end method distanceOfCountryToOtherCountries
-
-  public getTimezones() {} //end method timezones
 } //end class Core
 
 const coreInstance = new Core();

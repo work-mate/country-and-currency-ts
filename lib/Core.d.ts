@@ -4,13 +4,14 @@ import LocationInterface from "./LocationInterface";
 interface CountryWithDistance extends Country {
     distance: number;
 }
-declare class Core {
+export declare class Core {
     private countries;
     private currencies;
     static instance: Core;
     constructor();
-    getCountries(): Array<Country>;
     getCurrencies(): Array<Currency>;
+    getCurrencyBy(field: "name" | "code" | "symbol", value: string): Currency | undefined;
+    getCountries(): Array<Country>;
     getCountriesBy(field: "name" | "capital" | "continent" | "flag" | "iso2" | "iso3" | "dail_code", value: string): Array<Country>;
     private sphereDistance;
     distanceBetweenLocations(firstLocation: LocationInterface, secondLocation: LocationInterface): number;
@@ -19,7 +20,6 @@ declare class Core {
     topXClosestCountries(country: Country, x: number): Array<CountryWithDistance>;
     topXFarthestCountries(country: Country, x: number): Array<CountryWithDistance>;
     distanceOfCountryToOtherCountries(country: Country, order?: "asc" | "desc"): Array<CountryWithDistance>;
-    getTimezones(): void;
 }
 declare const coreInstance: Core;
 export default coreInstance;
