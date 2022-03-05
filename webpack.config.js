@@ -4,7 +4,7 @@ module.exports = {
   entry: "./lib/index.js",
   output: {
     filename: "bundle.js",
-    library: "CountryAndCurrency",
+    library: "CountryAndCurrencyLib",
     path: path.resolve(__dirname, "dist"),
   },
 };

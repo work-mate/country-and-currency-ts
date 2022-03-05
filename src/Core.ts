@@ -98,9 +98,10 @@ export class Core {
     x: number,
     order: "asc" | "desc"
   ): Array<CountryWithDistance> {
-    return this.distanceOfCountryToOtherCountries(country, order)
-      .filter((el) => el.iso3 != country.iso3)
-      .splice(0, Math.ceil(x));
+    return this.distanceOfCountryToOtherCountries(country, order).splice(
+      0,
+      Math.ceil(x)
+    );
   } //end method topClosestOrFarthestCountries
 
   public topXClosestCountries(
@@ -121,22 +122,24 @@ export class Core {
     country: Country,
     order: "asc" | "desc" = "asc"
   ): Array<CountryWithDistance> {
-    const countriesWithDistance = this.getCountries().map((el: Country) => {
-      const temp = el as CountryWithDistance;
+    const countriesWithDistance = this.getCountries()
+      .filter((el) => el.iso3 != country.iso3)
+      .map((el: Country) => {
+        const temp = el as CountryWithDistance;
 
-      temp.distance = this.distanceBetweenLocations(
-        {
-          lat: country.latitude,
-          long: country.longitude,
-        },
-        {
-          lat: temp.latitude,
-          long: temp.longitude,
-        }
-      );
+        temp.distance = this.distanceBetweenLocations(
+          {
+            lat: country.latitude,
+            long: country.longitude,
+          },
+          {
+            lat: temp.latitude,
+            long: temp.longitude,
+          }
+        );
 
-      return temp;
-    }) as Array<CountryWithDistance>;
+        return temp;
+      }) as Array<CountryWithDistance>;
 
     countriesWithDistance.sort((a, b) => {
       return (a.distance - b.distance) * (order == "desc" ? -1 : 1);
