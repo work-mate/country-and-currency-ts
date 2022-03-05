@@ -24,7 +24,7 @@ Then you can access the country and currency instance using
 ```bash
 # using npm
 
-npm install @workmate/country-and-currency
+npm install --save @workmate/country-and-currency
 
 # using yarn
 yarn add @workmate/country-and-currency
