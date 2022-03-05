@@ -1,6 +1,6 @@
 {
   "name": "@workmate/country-and-currency",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A lightweight library for countries, currencies as well as location related calculations",
   "main": "lib/index.js",
   "keywords": [
