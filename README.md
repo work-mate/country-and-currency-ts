@@ -1,5 +1,5 @@
 # Country and currency library
-This library can be used to get the countries as well as do some distance calculations and also get currencies
+A lightweight library for countries, currencies as well as location related calculations
 
 ## Installation
 

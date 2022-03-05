@@ -1,8 +1,18 @@
 {
   "name": "@workmate/country-and-currency",
   "version": "1.0.0-beta.1",
-  "description": "",
+  "description": "A lightweight library for countries, currencies as well as location related calculations",
   "main": "lib/index.js",
+  "keywords": [
+    "country",
+    "currency",
+    "currencies",
+    "country distances",
+    "global distances",
+    "haversine",
+    "distance",
+    "location distances"
+  ],
   "scripts": {
     "build": "tsc -p . && webpack --config webpack.config.js --mode=production",
     "serve": "webpack serve --config webpack.config.js --mode=development",
@@ -13,7 +23,7 @@
     "url": "git+https://github.com/work-mate/country-and-currency-ts.git"
   },
   "author": "David Oyinbo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/work-mate/country-and-currency-ts/issues"
   },
