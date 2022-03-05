@@ -6,7 +6,7 @@ This library can be used to get the countries as well as do some distance calcul
 #### CDN
 Add the js script to the head of the html file
 ```html
-<script src="./dist/bundle.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@workmate/country-and-currency@1.0.0/dist/bundle.js" defer></script>
 ```
 
 Then you can access the country and currency instance using
