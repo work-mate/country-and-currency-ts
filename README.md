@@ -9,7 +9,7 @@ A lightweight library for countries, their dail codes, currencies as well as loc
 #### CDN
 Add the js script to the head of the html file
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@workmate/country-and-currency@1.0.0/dist/bundle.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@workmate/country-and-currency/dist/bundle.js" defer></script>
 ```
 
 Then you can access the country and currency instance using
