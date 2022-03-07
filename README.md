@@ -23,7 +23,6 @@ Then you can access the country and currency instance using
 #### Package Manager
 ```bash
 # using npm
-
 npm install --save @workmate/country-and-currency
 
 # using yarn
