@@ -1,6 +1,6 @@
 {
   "name": "@workmate/country-and-currency",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight library for countries, their dail codes, currencies as well as location related calculations",
   "main": "lib/index.js",
   "keywords": [
