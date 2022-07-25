@@ -1,1 +1,1 @@
-{"version":3,"file":"currencies.d.ts","sourceRoot":"","sources":["../../src/resources/currencies.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,QAAA,MAAM,UAAU,EAAE,KAAK,CAAC,QAAQ,CA+zB/B,CAAC;AAEF,eAAe,UAAU,CAAC"}
+{"version":3,"file":"currencies.d.ts","sourceRoot":"","sources":["../../src/resources/currencies.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,QAAA,MAAM,UAAU,EAAE,KAAK,CAAC,QAAQ,CAg0B/B,CAAC;AAEF,eAAe,UAAU,CAAC"}

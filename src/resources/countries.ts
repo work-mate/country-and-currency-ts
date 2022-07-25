@@ -2841,6 +2841,23 @@ const countries: Array<Country> = [
     },
   },
   {
+    name: "Russia",
+    capital: "Moscow",
+    continent: "AS/EU",
+    flag: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg",
+    iso2: "RU",
+    iso3: "RUS",
+    dail_code: "+7",
+    latitude: 61.524,
+    longitude: 105.3188,
+    currency: {
+      unicode: "🇷🇺",
+      code: "RUB",
+      name: "Russian Ruble",
+      symbol: "₽",
+    },
+  },
+  {
     name: "Rwanda",
     capital: "Kigali",
     continent: "AF",
@@ -2874,6 +2891,7 @@ const countries: Array<Country> = [
       symbol: "€",
     },
   },
+
   {
     name: "Saint Kitts and Nevis",
     capital: "Basseterre",

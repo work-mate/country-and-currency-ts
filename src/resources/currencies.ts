@@ -206,6 +206,7 @@ const currencies: Array<Currency> = [
     code: "HRK",
     symbol: "kn",
   },
+  // @Deprecated
   {
     name: "Cuban Convertible Peso",
     code: "CUC",
