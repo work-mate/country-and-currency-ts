@@ -212,6 +212,11 @@ const currencies: Array<Currency> = [
     symbol: "$, CUC",
   },
   {
+    name: "Cuban Peso",
+    code: "CUP",
+    symbol: "₱",
+  },
+  {
     name: "Czech Republic Koruna",
     code: "CZK",
     symbol: "Kč",

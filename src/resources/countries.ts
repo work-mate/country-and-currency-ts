@@ -846,9 +846,9 @@ const countries: Array<Country> = [
     longitude: -80,
     currency: {
       unicode: "🇨🇺",
-      code: "CUC",
-      name: "Cuban Convertible Peso",
-      symbol: "$, CUC",
+      code: "CUP",
+      name: "Cuban Peso",
+      symbol: "₱",
     },
   },
   {
