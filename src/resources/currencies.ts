@@ -245,7 +245,7 @@ const currencies: Array<Currency> = [
   {
     name: "Egyptian Pound",
     code: "EGP",
-    symbol: "ج.م",
+    symbol: "£",
   },
   {
     name: "Eritrean Nakfa",
