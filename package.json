@@ -1,6 +1,6 @@
 {
   "name": "@workmate/country-and-currency",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A lightweight library for countries, their dail codes, country flags, longitude and latitude, currencies as well as location related calculations",
   "main": "lib/index.js",
   "keywords": [
