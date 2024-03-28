@@ -1,8 +1,8 @@
-# Country and currency library
+# Country flags, capitals and currency library
 ![NPM](https://img.shields.io/npm/l/@workmate/country-and-currency) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@workmate/country-and-currency) ![npm](https://img.shields.io/npm/v/@workmate/country-and-currency) ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@workmate/country-and-currency) ![GitHub last commit](https://img.shields.io/github/last-commit/work-mate/country-and-currency-ts)
 
 <br />
-A lightweight library for countries, their dail codes, currencies as well as location related calculations
+A lightweight library for countries' flags (country flag, unicode, location), capitals, their dail codes, currencies as well as location related calculations
 
 ## Installation
 
