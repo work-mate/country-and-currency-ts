@@ -3,6 +3,10 @@
   "version": "1.2.0",
   "description": "A lightweight library for countries' flags (country flag, unicode, location), capitals, their dail codes, currencies as well as location related calculations",
   "main": "lib/index.js",
+  "files": [
+    "/lib",
+    "/dist"
+  ],
   "keywords": [
     "country",
     "country flag",
@@ -23,9 +27,9 @@
     "phone code"
   ],
   "scripts": {
-    "build": "tsc -p . && webpack --config webpack.config.js --mode=production",
-    "serve": "webpack serve --config webpack.config.js --mode=development",
-    "dev": " tsc --watch"
+    "build": "npx tsc -p . && webpack --config webpack.config.js --mode=production",
+    "serve": "npx webpack serve --config webpack.config.js --mode=development",
+    "dev": " npx tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -38,8 +42,9 @@
   },
   "homepage": "https://github.com/work-mate/country-and-currency-ts#readme",
   "devDependencies": {
-    "webpack": "^5.70.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.7.4"
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
